@@ -36,7 +36,7 @@ def get_goods_list():
         'data': rows
     })
 
-@app.route('/api/yangsheng/yaoshanbao/<int:goods_id>', methods=['GET'])
+@app.route('/api/yangsheng/yaoshanbao/goods/<int:goods_id>', methods=['GET'])
 def get_goods_detail(goods_id):
     # 连接数据库
     conn = pymysql.connect(**db_config)
